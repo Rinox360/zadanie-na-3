@@ -1,9 +1,94 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<title> Zamowienie obiadu</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Zamówienie obiadu</title>
+  <style>
+    body {
+      background-color: #eaeaea;
+    }
+    
+    form {
+      background-color: #fff;
+      padding: 20px;
+      width: 400px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"], select {
+      width: 100%;
+      padding: 5px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-<h1>Menu obiadowe</1> 
+  <form>
+    <h2>Zamówienie obiadu</h2>
+    
+    <div class="form-group">
+      <label for="nazwisko">Nazwisko:</label>
+      <input type="text" id="nazwisko" name="nazwisko">
+    </div>
+    
+    <div class="form-group">
+      <label for="imie">Imię:</label>
+      <input type="text" id="imie" name="imie">
+    </div>
+    
+    <div class="form-group">
+      <label for="telefon">Telefon:</label>
+      <input type="text" id="telefon" name="telefon">
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+    </div>
+    
+    <div class="form-group">
+      <label for="miasto">Miasto:</label>
+      <input type="text" id="miasto" name="miasto">
+    </div>
+    
+    <div class="form-group">
+      <label for="ulica">Ulica:</label>
+      <input type="text" id="ulica" name="ulica">
+    </div>
+    
+    <div class="form-group">
+      <label for="dom">Dom:</label>
+      <input type="text" id="dom" name="dom">
+    </div>
+    
+    <div class="form-group">
+      <label for="mieszkanie">Mieszkanie:</label>
+      <input type="text" id="mieszkanie" name="mieszkanie">
+    </div>
+
+<body>
+<h1>      Menu obiadowe</1> 
 <h2>Zupa</h2>
 <form action="/zamowienie" method="POST"> 
 <label for="zupa"> Wybierz zupe:</label>
@@ -22,7 +107,32 @@
 <input type="radio" id="ryba" name="danie" value="ryba"
 <label for "ryba">ryba</label> 
 <input type="radio" id="ryz" name="danie" value="ryba"
-<label for "ryba">ryba</label> 
+<label for "ryba">ryba</label>
+
+<h2>Napój</h2>
+  <label for="napoj">Wybierz napój:</label>
+  <input type="checkbox" id="kawa" name="napoj" value="kawa">
+  <label for="kawa">kawa</label>
+  <input type="checkbox" id="sok" name="napoj" value="sok">
+  <label for="sok">Sok</label>
+  <input type="checkbox" id="herbata" name="napoj" value="herbata">
+  <label for="herbata">Herbata</label>
+  <br><br>
+
+ <h2>Deser</h2>
+  <label for="deser">Wybierz deser:</label>
+  <select name="deser" id="deser">
+    <option value="ciasto">Ciasto</option>
+    <option value="lodowiec">Lodowiec</option>
+    <option value="owoce">Owoce</option>
+  </select>
+  <br><br>
+  
+  <input type="submit" value="Zamów">
+  </form>
+</body>
+</html>
+
 
 
 
